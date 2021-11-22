@@ -5,7 +5,7 @@ $(document).ready(function() {
         value: 0,
         orientation: "horizontal",
         animate: "slow",
-        slide1: function( event, ui ) {
+        slide: function( event, ui ) {
             $( "#minC" ).val(ui.value );
          }
     });
@@ -14,7 +14,7 @@ $(document).ready(function() {
         value: 0,
         orientation: "horizontal",
         animate: "slow",
-        slide2: function( event, ui ) {
+        slide: function( event, ui ) {
             $( "#maxC" ).val(ui.value);
          }
     });
@@ -23,7 +23,7 @@ $(document).ready(function() {
         value: 0,
         orientation: "horizontal",
         animate: "slow",
-        slide3: function( event, ui ) {
+        slide: function( event, ui ) {
             $( "#minR" ).val(ui.value);
          }
     });
@@ -32,7 +32,7 @@ $(document).ready(function() {
         value: 0,
         orientation: "horizontal",
         animate: "slow",
-        slide4: function( event, ui ) {
+        slide: function( event, ui ) {
             $( "#maxR" ).val(ui.value);
          }
     });

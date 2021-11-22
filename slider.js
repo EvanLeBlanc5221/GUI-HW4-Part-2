@@ -3,6 +3,8 @@ $(document).ready(function() {
 
     $("#slider").slider({
         value: 0,
+        min: -50,
+        max: 50,
         orientation: "horizontal",
         animate: "slow",
         slide: function( event, ui ) {
@@ -12,6 +14,8 @@ $(document).ready(function() {
 
     $("#slider2").slider({
         value: 0,
+        min: -50,
+        max: 50,
         orientation: "horizontal",
         animate: "slow",
         slide: function( event, ui ) {
@@ -21,6 +25,8 @@ $(document).ready(function() {
 
     $("#slider3").slider({
         value: 0,
+        min: -50,
+        max: 50,
         orientation: "horizontal",
         animate: "slow",
         slide: function( event, ui ) {
@@ -30,6 +36,8 @@ $(document).ready(function() {
 
     $("#slider4").slider({
         value: 0,
+        min: -50,
+        max: 50,
         orientation: "horizontal",
         animate: "slow",
         slide: function( event, ui ) {

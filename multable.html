@@ -1,0 +1,71 @@
+<!--
+File: multable.html
+GUI Assignment: Creating a dynamic table
+Evan LeBlanc, UMass Lowell Computer Science, Evan_LeBlanc@student.uml.edu
+Copyright (c) 2021 by Evan. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by EL on November 21, 2021 at 11:52 PM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/multtable.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/additional-methods.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"></script>
+        <link href = "https://code.jquery.com/ui/1.11.4/themes/mint-choc/jquery-ui.css" rel = "stylesheet">
+
+        <title>Interactive Dynamic Table</title>
+        
+    </head>
+<body>
+    <h1>Interactive Dynamic Table</h1>
+
+<!--Form created for taking in the information from the user-->
+    <form id="multTable">
+           <label for="MinCol">1. Min Column</label>
+            <input type="number" id="minC" name="minCol" placeholder="Minimum Number" value="" required>
+            <div id="slider"></div>
+
+            <label for="MaxCol">2. Max Column</label>
+             <input type="number" id="maxC" name="maxCol" placeholder="Maximum Number" value="" required>
+             <div id="slider2"></div>
+
+            <label for="MinRow">3. Min Row</label>
+             <input type="number" id="minR" name="minRow" placeholder="Minimum Row" value="" required>
+             <div id="slider3"></div>
+
+            <label for="MaxRow">4. Max Row</label>
+             <input type="number" id="maxR" name="maxRow" placeholder="Maximum Row" value="" required>
+             <div id="slider4"></div>
+
+            <button type = "button" id ="btn" onclick="makeTable()">Click to submit</button>
+            
+
+    </form>
+
+    <span id="error"></span>
+    <div id ="myTable" style="max-width: 250px; max-height: 250px; margin-left: 850px; margin-bottom: 500px; overflow:auto;"></div>
+    <!--span is used for user error, div is used for creating the table-->
+   
+
+    <br></br>
+
+    <!--This is where the tabs will be-->
+    <div id="tab">
+        <ul>
+        </ul>
+    </div>
+
+    <div id ="myTable" style="max-width: 250px; max-height: 250px; margin-left: 850px; margin-bottom: 500px; overflow:auto;"></div>
+    <script src="js/multTable.js"></script>
+    <script src="js/slider.js"></script>
+
+
+</body>
+</html>
